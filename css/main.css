@@ -4,5 +4,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Style for header */
+
+.navbar-container {
+  background: rgba(255, 2555, 255, 0.4);
+  border: none;
+}
+
+[alt="user"] {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.button-burger {
+  margin-left: 1rem;
+}
+
+.navbar-logo {
+  padding: 10.5px 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Style for home */
+
+#images-cover-page {
+  position: relative;
+}
+
+.sobre {
+ position:absolute;
+ top:34rem;
+ right:0px;
+}
+
+.sobre-text {
+  position: absolute;
+  top: 15rem;
+  right: 0px;
   text-align: center;
+  font-size: 3rem;
+  color: #fff;
+ }
+
+.sobre-coffe {
+  position: absolute;
+  top: 40rem;
+  left: 0px;
+}
+
+.sobre-diary {
+  position: absolute;
+  top: 40rem;
+  left: 20rem;
+}
+
+.sobre-headphones{
+  position: absolute;
+  top: 40rem;
+  left: 10rem;
+}
+
+[alt="portada"] {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter:brightness(0.8);
+}
+
+[alt="laptop"] {
+  z-index: 1000;
+  width: 36rem;
+}
+
+[alt="coffee"] {
+  z-index: 1000;
+  width: 20rem;
+}
+
+[alt="diary"] {
+  z-index: 1000;
+  width: 20rem;
+}
+
+[alt="headphones"] {
+  z-index: 1000;
+  width: 20rem;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+/* Style for about */
+
+.container-about {
+  background-color: #435b29;
+}
+
+[alt="profile"] {
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+}
+
+.text-about {
+  color: #fff;
+  text-align: justify;
+}
+
+.download-button {
+  background: none;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border-radius: 1rem; 
+}
+
+.margin {
+  margin-bottom: 2rem;
 }
