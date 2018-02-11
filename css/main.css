@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.flex {
+  display: flex;
+}
+
 /* Style for header */
 
 .navbar-container {
@@ -75,11 +79,13 @@
   left: 10rem;
 }
 
-[alt="portada"] {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  filter:brightness(0.8);
+.portada {
+background-image: url(../assets/images/portada.png);
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh; 
+z-index: -1;
 }
 
 [alt="laptop"] {
@@ -112,6 +118,12 @@
   background-color: #435b29;
 }
 
+.container-about-me {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  border: 1px solid #ffc111;
+}
+
 [alt="profile"] {
   width: 15rem;
   height: 15rem;
@@ -135,4 +147,87 @@
 
 .margin {
   margin-bottom: 2rem;
+}
+
+/* Stylle for skills */
+
+.title-skills {
+  margin-bottom: 2.5rem;
+  color: #ffc107;
+  text-align: center;
+}
+
+.container-skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.bar-progress {
+  margin-bottom: 0;
+}
+
+[alt="firebase-logo"] {
+  width: 2.5rem;
+}
+
+/* Style for Media Query */
+
+@media (min-width:955px) {
+  #skills-cover-page {
+    position: relative;
+  }
+  
+  .sobre-title-skills {
+    width: 100%;
+    position:absolute;
+    top:10rem;
+    z-index: -1;
+  }
+
+  .sobre-skills {
+    width: 100%;
+    position:absolute;
+    top:20rem;
+    z-index: -1;
+  }
+  
+  [alt="portada-skills"] {
+    width: 95rem;
+    height: 90vh;
+    z-index: 1000;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:1200px) {
+  .sobre-title-skills {
+    top:6rem;
+  }
+
+  .sobre-skills {
+    top:14rem;
+  }
+
+  [alt="portada-skills"] {
+    width: 95rem;
+    height: 75vh;
+  }
+}
+
+@media (min-width:1440px) {
+  [alt="portada-skills"] {
+    width: 130rem;
+    height: 80vh;
+  }
+}
+
+@media (min-width:1990px) {
+  [alt="portada-skills"] {
+    width: 200rem;
+    height: 50vh;
+  }
 }
