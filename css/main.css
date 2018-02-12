@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.container {
+  padding-top: 4rem;
+  background-color: #435b29;
+}
+
 /* Style for header */
 
 .navbar-container {
@@ -114,13 +119,8 @@ z-index: -1;
 
 /* Style for about */
 
-.container-about {
-  background-color: #435b29;
-}
-
 .container-about-me {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   border: 1px solid #ffc111;
 }
 
@@ -151,6 +151,10 @@ z-index: -1;
 
 /* Stylle for skills */
 
+.container-white {
+  margin-top: 4rem;
+}
+
 .title-skills {
   margin-bottom: 2.5rem;
   color: #ffc107;
@@ -171,9 +175,39 @@ z-index: -1;
   width: 2.5rem;
 }
 
+.container-skills {
+  margin-bottom: 2rem;
+}
+
+/* Style for portfolio */
+
+.container-portfolio {
+  border: 1px solid #ffc107;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+.images-portfolio {
+  width: 100%
+}
+
 /* Style for Media Query */
 
 @media (min-width:955px) {
+  /* Global */
+
+  .container {
+    padding-top: 8rem;
+  }
+
+  /* Style for about */
+
+  .container-about-me {
+    margin-bottom: 8rem;
+  }
+
+  /* Stylle for skills */
+
   #skills-cover-page {
     position: relative;
   }
@@ -196,10 +230,17 @@ z-index: -1;
     width: 95rem;
     height: 90vh;
     z-index: 1000;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /* Style for portfolio */
+
+  .container-portfolio {
+    margin-left: 6rem;
+    margin-bottom: 6rem;
   }
 }
 
@@ -216,6 +257,13 @@ z-index: -1;
     width: 95rem;
     height: 75vh;
   }
+
+  /* Style for portfolio */
+
+  .container-portfolio {
+    margin-left: 7rem;
+    margin-bottom: 7rem;
+  }
 }
 
 @media (min-width:1440px) {
@@ -228,6 +276,6 @@ z-index: -1;
 @media (min-width:1990px) {
   [alt="portada-skills"] {
     width: 200rem;
-    height: 50vh;
+    height: 65vh;
   }
 }
