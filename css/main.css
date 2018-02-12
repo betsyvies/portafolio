@@ -11,7 +11,7 @@
 }
 
 .container {
-  padding-top: 4rem;
+  padding-top: 8rem;
   background-color: #435b29;
 }
 
@@ -51,12 +51,6 @@
   position: relative;
 }
 
-.sobre {
- position:absolute;
- top:34rem;
- right:0px;
-}
-
 .sobre-text {
   position: absolute;
   top: 15rem;
@@ -67,17 +61,12 @@
 }
 
 .portada {
-background-image: url(../assets/images/portada.png);
+background-image: url(../assets/images/portada-mobile.png);
 background-size: 100vw 100vh;
 background-repeat: no-repeat;
 background-position: center center;
 height: 100vh; 
 z-index: -1;
-}
-
-[alt="laptop"] {
-  z-index: 1000;
-  width: 36rem;
 }
 
 .text {
@@ -229,59 +218,16 @@ hr {
 
 /* Style for media query */
 
-@media (min-width: 500px) {
-  .sobre {
-    top: 34rem;
-    right: 10rem;
-  }
-}
-
 @media (min-width:768px) {
-  .sobre {
-    top: 34rem;
-    right: 27rem;
-  }
+  .portada {
+    background-image: url(../assets/images/portada-tablet.png);
+    }
 }
 
 @media (min-width:955px) {
-  /* Global */
-
-  .container {
-    padding-top: 8rem;
-  }
-
-  /* Style for home */
-
-  [alt="laptop"] {
-    z-index: 1000;
-    width: 43rem;
-  }
-
-  .sobre-text {
-    top: 12rem;
-    right: 0px;
-    font-size: 4rem;
-  }
-  
-  .sobre {
-    top: 30rem;
-    right: 27rem;
-  }
-
-  .sobre-camera {
-    position: absolute;
-    width: 10rem;
-    top: 47rem;
-    left: 10rem;
-  }
-  
-  .sobre-headphones{
-    position: absolute;
-    width: 30rem;
-    top: 42rem;
-    left: 64rem;
-    z-index: 50;
-  }
+  .portada {
+    background-image: url(../assets/images/portada-desktop.png);
+    }
 
   /* Style for about */
 
@@ -321,38 +267,8 @@ hr {
 }
 
 @media (min-width:1000px) {
-  /* Style for home */
-
-  .sobre {
-    top: 30rem;
-    left: 45rem;
-  }
-
-  .sobre-coffe {
-    position: absolute;
-    width: 16rem;
-    top: 45rem;
-    left: 8rem;
-  }
-
-  .sobre-mobile {
-    position: absolute;
-    width: 8rem;
-    top: 50rem;
-    right: 4em;
-  }
-  
-  .sobre-camera {
-    top: 45rem;
-    left: 30rem;
-  }
-  
-  .sobre-headphones{
-    top: 40rem;
-    left: 82rem;
-  }
-
   /* Style for Skills */
+
   .sobre-title-skills {
     top:6rem;
   }
