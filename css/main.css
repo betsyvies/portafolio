@@ -10,9 +10,19 @@
   display: flex;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  padding-top: 8rem;
-  background-color: #435b29;
+  padding-top: 6rem;
+  background-color: #8e1d41;
+}
+
+.container-height {
+  height: 100vh;
 }
 
 /* Style for header */
@@ -61,7 +71,7 @@
 }
 
 .portada {
-background-image: url(../assets/images/portada-mobile.png);
+background-image: url(../assets/images/portada.png);
 background-size: 100vw 100vh;
 background-repeat: no-repeat;
 background-position: center center;
@@ -77,12 +87,11 @@ z-index: -1;
 
 .container-about-me {
   margin-bottom: 4rem;
-  border: 1px solid #ffc111;
 }
 
 [alt="profile"] {
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 100%;
@@ -108,19 +117,20 @@ z-index: -1;
 /* Stylle for skills */
 
 .container-white {
-  margin-top: 4rem;
+  margin-top: 6.5rem;
 }
 
 .title-skills {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5.5rem;
   color: #ffc107;
   text-align: center;
 }
 
 .container-skill {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .bar-progress {
@@ -128,24 +138,30 @@ z-index: -1;
 }
 
 [alt="firebase-logo"] {
-  width: 2.5rem;
+  width: 7rem;
 }
 
 .container-skills {
   margin-bottom: 2rem;
 }
 
+.container-a {
+  margin-top: 1.5rem;
+  color: #8e1d41;
+}
+
 /* Style for portfolio */
 
 .container-portfolio {
-  border: 1px solid #ffc107;
   padding-bottom: 2rem;
   padding-top: 2rem;
   margin-bottom: 4rem;
 }
 
 .images-portfolio {
-  width: 100%
+  border-radius: 100%;
+  width: 25rem;
+  height: 25rem;
 }
 
 /* Style for contact */
@@ -178,7 +194,7 @@ z-index: -1;
 
 .container-footer {
   width: 100%;
-  background-color: #435b29; 
+  background-color: #8e1d41; 
 }
 
 .icons-white {
@@ -203,7 +219,7 @@ z-index: -1;
 hr {
   width: 50%;
   height: 1px;
-  background-color: #ffc107;
+  background-color: #ffcd19;
   border: none;
   margin: 0;
 }
@@ -220,14 +236,20 @@ hr {
 
 @media (min-width:768px) {
   .portada {
-    background-image: url(../assets/images/portada-tablet.png);
-    }
+    background-image: url(../assets/images/portada.png);
+  }
 }
 
 @media (min-width:955px) {
+  /* Home */
+
   .portada {
-    background-image: url(../assets/images/portada-desktop.png);
-    }
+    background-image: url(../assets/images/portada.png);
+  }
+
+  .name {
+    font-size: 7rem;
+  }
 
   /* Style for about */
 
@@ -235,51 +257,35 @@ hr {
     margin-bottom: 8rem;
   }
 
-  /* Stylle for skills */
+  /* Style for portfolio */
 
-  #skills-cover-page {
-    position: relative;
-  }
-  
-  .sobre-title-skills {
-    width: 100%;
-    position:absolute;
-    top:10rem;
-    z-index: -1;
-  }
-
-  .sobre-skills {
-    width: 100%;
-    position:absolute;
-    top:20rem;
-    z-index: -1;
-  }
-  
-  [alt="portada-skills"] {
-    width: 95rem;
-    height: 90vh;
-    z-index: 1000;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-    margin-left: auto;
-    margin-right: auto;
+  .images-portfolio {
+    border-radius: 100%;
+    width: 25rem;
+    height: 25rem;
   }
 }
 
 @media (min-width:1000px) {
-  /* Style for Skills */
+  /* Style dor About */
 
-  .sobre-title-skills {
-    top:6rem;
+  .text-about {
+    font-size: 2rem;
   }
 
-  .sobre-skills {
-    top:14rem;
+  .title-skills {
+    font-size: 8rem;
   }
 
-  [alt="portada-skills"] {
-    width: 95rem;
-    height: 75vh;
+  [alt="profile"] {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .container-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Style for portfolio */
@@ -288,18 +294,10 @@ hr {
     margin-left: 7rem;
     margin-bottom: 7rem;
   }
-}
 
-@media (min-width:1440px) {
-  [alt="portada-skills"] {
-    width: 130rem;
-    height: 80vh;
-  }
-}
-
-@media (min-width:1990px) {
-  [alt="portada-skills"] {
-    width: 200rem;
-    height: 65vh;
+  .images-portfolio {
+    border-radius: 100%;
+    width: 30rem;
+    height: 30rem;
   }
 }
