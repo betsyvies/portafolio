@@ -25,10 +25,17 @@
   height: 100vh;
 }
 
+.title-section {
+  margin-bottom: 2.5rem;
+  color: #ffc107;
+  text-align: center;
+}
+
 /* Style for header */
 
 .navbar-container {
-  background: rgba(255, 2555, 255, 0.4);
+  background: #8e1d41;
+  /* background: rgba(255, 255, 255, 0.4); */
   border: none;
 }
 
@@ -63,18 +70,18 @@
 
 .sobre-text {
   position: absolute;
-  top: 15rem;
+  top: 26rem;
   right: 0px;
   text-align: center;
   font-size: 3rem;
-  color: #fff;
+  color: #8e1d41;
 }
 
 .portada {
 background-image: url(../assets/images/portada.png);
-background-size: 100vw 100vh;
+background-size: cover;
 background-repeat: no-repeat;
-background-position: center center;
+/* background-position: center center; */
 height: 100vh; 
 z-index: -1;
 }
@@ -110,20 +117,10 @@ z-index: -1;
   border-radius: 1rem; 
 }
 
-.margin {
-  margin-bottom: 2rem;
-}
-
 /* Stylle for skills */
 
 .container-white {
-  margin-top: 6.5rem;
-}
-
-.title-skills {
-  margin-bottom: 5.5rem;
-  color: #ffc107;
-  text-align: center;
+  margin-top: 11.5rem;
 }
 
 .container-skill {
@@ -138,11 +135,12 @@ z-index: -1;
 }
 
 [alt="firebase-logo"] {
-  width: 7rem;
+  width: 6.33rem;
 }
 
 .container-skills {
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 
 .container-a {
@@ -170,12 +168,6 @@ z-index: -1;
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
-}
-
-.title-contact {
-  margin-bottom: 2.5rem;
-  color: #ffc107;
-  text-align: center;
 }
 
 .text-contact {
@@ -206,6 +198,10 @@ z-index: -1;
   padding: 10px;
 }
 
+a {
+  color: none;
+}
+
 .icons-white span {
   color: #fff;
   padding-left: 10px;
@@ -234,18 +230,8 @@ hr {
 
 /* Style for media query */
 
-@media (min-width:768px) {
-  .portada {
-    background-image: url(../assets/images/portada.png);
-  }
-}
-
 @media (min-width:955px) {
-  /* Home */
-
-  .portada {
-    background-image: url(../assets/images/portada.png);
-  }
+  /* Style for Home */
 
   .name {
     font-size: 7rem;
@@ -264,6 +250,12 @@ hr {
     width: 25rem;
     height: 25rem;
   }
+
+  /* Style for skills */
+
+  .title-contact {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width:1000px) {
@@ -274,7 +266,7 @@ hr {
   }
 
   .title-skills {
-    font-size: 8rem;
+    font-size: 4rem;
   }
 
   [alt="profile"] {
