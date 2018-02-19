@@ -17,7 +17,7 @@
 }
 
 .container {
-  padding-top: 6rem;
+  padding: 2rem;
   background-color: #8e1d41;
 }
 
@@ -127,6 +127,7 @@ z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -158,8 +159,21 @@ z-index: -1;
 
 .images-portfolio {
   border-radius: 100%;
-  width: 25rem;
+  width: 100%;
   height: 25rem;
+  cursor: pointer;
+}
+
+.container-button {
+  margin-top: 2rem;
+}
+
+.button-portfolio {
+  background: none;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border-radius: 1rem; 
 }
 
 /* Style for contact */
@@ -231,6 +245,12 @@ hr {
 /* Style for media query */
 
 @media (min-width:955px) {
+  /* Global */
+
+  .container {
+    padding-top: 6rem;
+  }
+
   /* Style for Home */
 
   .name {
@@ -243,12 +263,16 @@ hr {
     margin-bottom: 8rem;
   }
 
+  .margin {
+    margin-top: 4rem;
+  }
+
   /* Style for portfolio */
 
   .images-portfolio {
     border-radius: 100%;
-    width: 25rem;
-    height: 25rem;
+    width: 100%;
+    height: 27rem;
   }
 
   /* Style for skills */
@@ -289,7 +313,7 @@ hr {
 
   .images-portfolio {
     border-radius: 100%;
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 27rem;
   }
 }
