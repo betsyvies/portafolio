@@ -6,8 +6,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center
 }
 
 .container-flex {
@@ -21,22 +30,33 @@
   background-color: #8e1d41;
 }
 
-.container-height {
-  height: 100vh;
+.margin-container {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .title-section {
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
+  font-weight: 800;
   color: #ffc107;
   text-align: center;
+}
+
+[target="_blank"] {
+  text-decoration: none;
+  text-decoration-line: none;
+  margin: 0;
+  outline: 0;
 }
 
 /* Style for header */
 
 .navbar-container {
   background: #8e1d41;
-  /* background: rgba(255, 255, 255, 0.4); */
   border: none;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 [alt="user"] {
@@ -46,11 +66,15 @@
 }
 
 .button-burger {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .navbar-logo {
   padding: 10.5px 10px;
+}
+
+.navbar-options {
+  margin-right: 2rem;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -62,6 +86,11 @@
   font-weight: 700;
 }
 
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 /* Style for home */
 
 #images-cover-page {
@@ -70,7 +99,7 @@
 
 .sobre-text {
   position: absolute;
-  top: 26rem;
+  top: 29rem;
   right: 0px;
   text-align: center;
   font-size: 3rem;
@@ -81,9 +110,12 @@
 background-image: url(../assets/images/portada.png);
 background-size: cover;
 background-repeat: no-repeat;
-/* background-position: center center; */
 height: 100vh; 
 z-index: -1;
+}
+
+.name {
+  font-size: 5rem;
 }
 
 .text {
@@ -93,7 +125,8 @@ z-index: -1;
 /* Style for about */
 
 .container-about-me {
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 [alt="profile"] {
@@ -107,14 +140,15 @@ z-index: -1;
 .text-about {
   color: #fff;
   text-align: justify;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
 }
 
-.download-button {
-  background: none;
-  border: 1px solid #fff;
-  padding: 1rem 1.5rem;
-  color: #fff;
-  border-radius: 1rem; 
+.title-about {
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  color: #ffc107;
+  text-align: center;
 }
 
 /* Stylle for skills */
@@ -164,6 +198,28 @@ z-index: -1;
   cursor: pointer;
 }
 
+.container-img a {
+  border-radius: 100%;
+  width: 100%;
+  display: block;
+  background-color:rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  outline: 0;
+}
+
+.container-hover {
+  opacity: 0.3;
+}
+
+.title-img {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  transform: translateY(100%);
+  text-align: center;
+  color: #fff;
+} 
+
 .container-button {
   margin-top: 2rem;
 }
@@ -176,24 +232,45 @@ z-index: -1;
   border-radius: 1rem; 
 }
 
+.container-works {
+  margin-top: 3rem;
+}
+
 /* Style for contact */
 
 .container-contact {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
 .text-contact {
-  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.container-contact-me {
+  border: 1px solid #ffc107; 
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   margin-top: 2rem;
 }
 
-.container-form {
-  border: 1px solid #ffc107; 
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+.container-icon-contact {
   margin-top: 2rem;
+}
+
+.download-button {
+  background: #ffc107;
+  border: 1px solid #ffc107;
+  padding: 1.5rem 2rem;
+  color: #fff;
+}
+
+.contact {
+  padding: 0;
 }
 
 /* Styles for footer */
@@ -208,43 +285,44 @@ z-index: -1;
   border-radius: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
   padding: 10px;
 }
 
-a {
-  color: none;
+.container-footer a {
+  width: 100%;
+  outline: 0;
 }
 
 .icons-white span {
-  color: #fff;
+  color: #000;
   padding-left: 10px;
 }
 
-.icons-white span:hover {
+.icons-white a:hover {
+  width: 100%;
+  outline: 0;
   color: #000;
   cursor: pointer;
-}
-
-hr {
-  width: 50%;
-  height: 1px;
-  background-color: #ffcd19;
-  border: none;
-  margin: 0;
 }
 
 .span {
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Style modal */
+
+.container-title {
+  text-align: center;
+  color: #ffc107;
 }
 
 /* Style for media query */
 
-@media (min-width:955px) {
+@media (min-width:768px) {
   /* Global */
 
   .container {
@@ -254,7 +332,11 @@ hr {
   /* Style for Home */
 
   .name {
-    font-size: 7rem;
+    font-size: 8rem;
+  }
+
+  .text {
+    font-size: 3rem;
   }
 
   /* Style for about */
@@ -264,7 +346,7 @@ hr {
   }
 
   .margin {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   /* Style for portfolio */
@@ -272,7 +354,6 @@ hr {
   .images-portfolio {
     border-radius: 100%;
     width: 100%;
-    height: 27rem;
   }
 
   /* Style for skills */
@@ -296,6 +377,8 @@ hr {
   [alt="profile"] {
     width: 35rem;
     height: 35rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .container-about-me {
@@ -314,6 +397,15 @@ hr {
   .images-portfolio {
     border-radius: 100%;
     width: 100%;
-    height: 27rem;
+  }
+
+  /* Style for contact */
+
+  .container-contact-me {
+    margin-left: 7rem;
+  }
+
+  .contact {
+    margin-left: 3rem;
   }
 }
