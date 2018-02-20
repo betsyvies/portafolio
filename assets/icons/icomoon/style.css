@@ -24,16 +24,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bootstrap:before {
-  content: "\e900";
-  color: #563d7c;
-  font-size: 8.5rem;
-}
-.icon-css3:before {
-  content: "\e901";
-  color: #1572b6;
-  font-size: 8.5rem;
-}
 .icon-github:before {
   color: #000;
   content: "\e906";
@@ -43,21 +33,6 @@
   content: "\e902";
   color: #d14836;
   font-size: 3.7rem;
-}
-.icon-html5:before {
-  content: "\e903";
-  color: #e34f26;
-  font-size: 8.5rem;
-}
-.icon-javascript:before {
-  content: "\e904";
-  color: #f7df1e;
-  font-size: 8.5rem;
-}
-.icon-jquery:before {
-  content: "\e905";
-  color: #0769ad;
-  font-size: 8.5rem;
 }
 .icon-mobile:before {
   content: "\e958";

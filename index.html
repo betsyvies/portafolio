@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Betsy Vidal</title>
   <!-- Import Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Josefin+Sans" rel="stylesheet">
   <!-- Import Font Awesome -->
   <link rel="stylesheet" href="assets/icons/icomoon/style.css">
   <!--Import Bootstrap.css-->
@@ -76,7 +76,7 @@
         <div class="col-xs-12 col-lg-12 container flex">
           <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 container-about-me center-block">
             <div class="col-xs-12 col-lg-6 margin">
-              <img class="center-block" src="assets/images/betsy.png" alt="profile">
+              <img class="center-block img-circle img-responsive" src="assets/images/betsy.png" alt="profile">
             </div>
             <div class="col-xs-12 col-lg-6 margin">
               <div class="col-xs-12 col-lg-12 margin">
@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 center-block">
                       <h3 class="text-center text-size">Web Design</h3>
-                      <p  class="text-center">
+                      <p class="text-center">
                         Implementando HTML5, CSS3 y Javascript.
                       </p>
                     </div>
@@ -177,8 +177,8 @@
                     </div>
                     <div class="col-xs-12 col-md-12 col-lg-12 padding-skills center-block">
                       <h3 class="text-center text-size">Soft Skill</h3>
-                      <p  class="text-center text-size-p">
-                          Capacidades más destacables: liderazgo, proactividad, creatividad y autoaprendizaje.
+                      <p class="text-center text-size-p">
+                        Capacidades más destacables: liderazgo, proactividad, creatividad y autoaprendizaje.
                       </p>
                     </div>
                   </div>
@@ -202,7 +202,7 @@
               <div class="col-xs-9 col-sm-12 col-md-12 col-lg-12">
                 <div class="container-img">
                   <a href="" data-toggle="modal" data-target="#modalImages">
-                    <img class="images-portfolio" src="assets/images/portada-afk.png" alt="Always for komrads">
+                    <img class="images-portfolio img-circle img-responsive" src="assets/images/portada-afk.png" alt="Always for komrads">
                     <p class="title-img"></p>
                   </a>
                 </div>
@@ -217,7 +217,7 @@
               <div class="col-xs-9 col-sm-12 col-md-12 col-lg-12">
                 <div class="container-img">
                   <a href="" data-toggle="modal" data-target="#modalImages">
-                    <img class="images-portfolio" src="assets/images/portada-insta-collage.png" alt="Insta collage">
+                    <img class="images-portfolio img-circle img-responsive" src="assets/images/portada-insta-collage.png" alt="Insta collage">
                     <p class="title-img"></p>
                   </a>
                 </div>
@@ -232,7 +232,7 @@
               <div class="col-xs-9 col-sm-12 col-md-12 col-lg-12">
                 <div class="container-img">
                   <a href="" data-toggle="modal" data-target="#modalImages">
-                    <img class="images-portfolio" src="assets/images/portada-swapi.png" alt="Swapi">
+                    <img class="images-portfolio img-circle img-responsive" src="assets/images/portada-swapi.png" alt="Swapi">
                     <p class="title-img"></p>
                   </a>
                 </div>
@@ -320,22 +320,18 @@
             <span -hidden="true">&times;</span>
           </button>
           <h1 id="title" class="container-title modal-center"></h1>
+          <div class="col-xs-12 container-img-modal">
+            <img class="center-block" src="" alt="img-modal">
+          </div>
         </div>
         <div class="modal-body background-modal-body">
           <div class="form-group row">
             <div class="col-xs-12 container-text">
               <p class="modal-center">
                 <span>
-                  <strong>Description:</strong>
-                </span>
-                <span id="description"></span>
-              </p>
-            </div>
-            <div class="col-xs-12 container-text">
-              <p class="modal-center">
-                <span>
                   <strong>Objective:</strong>
                 </span>
+                <br>
                 <span id="objective"></span>
               </p>
             </div>
@@ -344,6 +340,7 @@
                 <span>
                   <strong>Use technology:</strong>
                 </span>
+                <br>
                 <span id="technology"></span>
               </p>
             </div>
@@ -352,6 +349,7 @@
                 <span>
                   <strong>Members:</strong>
                 </span>
+                <br>
                 <span id="members"></span>
               </p>
             </div>
