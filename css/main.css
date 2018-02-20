@@ -50,6 +50,13 @@ body {
   outline: 0;
 }
 
+a:focus, a:hover {
+  color: transparent;
+  text-decoration: none;
+  outline: 0;
+}
+
+
 /* Style for header */
 
 .navbar-container {
@@ -211,6 +218,7 @@ z-index: -1;
 }
 
 .container-img a {
+  position: relative;
   border-radius: 100%;
   width: 100%;
   display: block;
@@ -225,9 +233,9 @@ z-index: -1;
 
 .title-img {
   position: absolute;
-  top: 23%;
+  top: 50%;
   width: 100%;
-  transform: translateY(100%);
+  transform: translateY(-50%);
   text-align: center;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
@@ -240,9 +248,10 @@ z-index: -1;
 
 .button-portfolio {
   background: none;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 1rem 1.5rem;
   color: #fff;
+  font-weight: 600;
   border-radius: 1rem; 
 }
 
@@ -285,6 +294,14 @@ z-index: -1;
 
 .contact {
   padding: 0;
+}
+
+.contact-icon {
+  color: #000;
+}
+
+.contact-icon:hover, .contact-icon:focus {
+  color: #000;
 }
 
 /* Styles for footer */
@@ -443,7 +460,7 @@ z-index: -1;
   /* Style for portfolio */
 
   .container-portfolio {
-    margin-left: 7rem;
+    margin-right: 3rem;
     margin-bottom: 7rem;
   }
 
@@ -455,6 +472,12 @@ z-index: -1;
   .title-img {
     font-size: 1.5rem;
   } 
+
+  .container-flex-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* Style for contact */
 
