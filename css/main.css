@@ -157,30 +157,43 @@ z-index: -1;
   margin-top: 11.5rem;
 }
 
+.section-skills {
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
 .container-skill {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding: 0;
 }
 
-.bar-progress {
-  margin-bottom: 0;
+.margin-skills {
+  margin-bottom: 3rem;
 }
 
-[alt="firebase-logo"] {
+[alt="skill"] {
   width: 6.33rem;
+  height: 6.33rem;
 }
 
-.container-skills {
-  margin-top: 4rem;
-  margin-bottom: 8rem;
+.padding-skills {
+  padding: 0;
 }
 
 .container-a {
   margin-top: 1.5rem;
   color: #8e1d41;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.text-size {
+  font-weight: 700;
 }
 
 /* Style for portfolio */
@@ -347,6 +360,12 @@ z-index: -1;
 
   .margin {
     margin-top: 2rem;
+  }
+
+  /* Style for skills */
+
+  .text-center {
+    font-size: 2rem;
   }
 
   /* Style for portfolio */
