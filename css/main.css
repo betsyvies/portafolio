@@ -56,7 +56,6 @@ a:focus, a:hover {
   outline: 0;
 }
 
-
 /* Style for header */
 
 .navbar-container {
@@ -106,7 +105,7 @@ a:focus, a:hover {
 
 .sobre-text {
   position: absolute;
-  top: 29rem;
+  top: 22rem;
   right: 0px;
   text-align: center;
   font-size: 3rem;
@@ -133,7 +132,7 @@ z-index: -1;
 
 .container-about-me {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 [alt="profile"] {
@@ -156,6 +155,16 @@ z-index: -1;
   font-weight: 800;
   color: #ffc107;
   text-align: center;
+}
+
+.title-badges {
+  color: #ffc107;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+[alt="badges"] {
+  width: 100%;
 }
 
 /* Stylle for skills */
@@ -399,6 +408,10 @@ z-index: -1;
     font-size: 3rem;
   }
 
+  .sobre-text {
+    top: 21rem;
+  }
+
   /* Style for about */
 
   .container-about-me {
@@ -433,7 +446,12 @@ z-index: -1;
   }
 }
 
-@media (min-width:1000px) {
+@media (min-width:935px) {
+  /* Style for home */
+  .sobre-text {
+    top: 29rem;
+  }
+
   /* Style dor About */
 
   .text-about {
