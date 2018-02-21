@@ -1,49 +1,13 @@
 # Portafolio
 
-## Objetivo:  
+Hola, soy Betsy Vidal, me apasiona crear productos tecnológicos y estar en constante aprendizaje. Soy front-end developer
+de Laboratoria y este proyecto es mi portafolio personal dónde muestro mis habilidades.
 
-
-
-## Flujo de la aplicación
-
-
-
-## Flujo de trabajo:
-
-- Primero creamos la estructura HTML, en forma anidada.
-- Comentar el código.
-- Enlazamos el archivo externo del CSS, esto para un mayor orden y hacer uso de las buenas practicas.
-- Enlazamos los archivos descargados, para hacer uso de las herramientas de Bootstrap.
-- Enlazamos los archivos descargados, para hacer uso de los selectores de Jquery.
-- Luego continuamos trabajando en CSS.
-- Comentar el código.
-- Subimos avances a github.
-- Terminar de dar estilo con CSS.
-- Empezamos a trabajar en JS utilizando Jquery Y ES6, para dar interacción a la página.
-- Comentar el código.
-- Subimos avances a github.
-- Cumplimos con el objetivo.
-- Digitar el archivo README.md
-- Subir el producto final a github.
-- Crear la rama "gh-pages".
+![portfolio-betsy](https://user-images.githubusercontent.com/30939075/36511083-6eb30b9e-1733-11e8-875f-ce04413c3e21.png)
 
 ## Herramientas Utilizadas:
 
 - Html5, para la estructura del contenido.
 - Css3, para darle estilo al contenido.
-- Bootstrap4
+- Bootstrap3
 - Jquery/ ES6
-
-## Fuente consultada:
-
-
-
-## Imagenes:
-
-
-
-
-
-
-
-

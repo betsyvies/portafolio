@@ -1,6 +1,6 @@
 $(document).ready(() => {
   var $imagesPortfolio = $('.images-portfolio');
-  var $dataModal = $('a[data-toggle=modal]');
+  var $dataModal = $('div[data-toggle=modal]');
   
   $imagesPortfolio.on('click', function(event) {
     /* Validamos si el atributo de la imagen es igual a un valor del array de objetos data */

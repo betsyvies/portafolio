@@ -36,7 +36,7 @@ body {
 }
 
 .title-section {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   margin-bottom: 2.5rem;
   font-weight: 800;
   color: #ffc107;
@@ -113,11 +113,11 @@ a:focus, a:hover {
 }
 
 .portada {
-background-image: url(../assets/images/portada.png);
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh; 
-z-index: -1;
+  background-image: url(../assets/images/portada.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  z-index: -1;
 }
 
 .name {
@@ -170,11 +170,11 @@ z-index: -1;
 /* Stylle for skills */
 
 .container-white {
-  margin-top: 11.5rem;
+  margin-top: 8.5rem;
 }
 
 .section-skills {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   margin-top: 3rem;
 }
 
@@ -224,9 +224,10 @@ z-index: -1;
   border-radius: 100%;
   width: 100%;
   cursor: pointer;
+  z-index: -1;
 }
 
-.container-img a {
+.container-img div {
   position: relative;
   border-radius: 100%;
   width: 100%;
@@ -234,6 +235,7 @@ z-index: -1;
   background-color:rgba(0, 0, 0, 0.6);
   text-decoration: none;
   outline: 0;
+  z-index: 1000;
 }
 
 .container-hover {
@@ -249,6 +251,7 @@ z-index: -1;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
+  z-index: -2;
 } 
 
 .container-button {
@@ -415,6 +418,7 @@ z-index: -1;
   /* Style for about */
 
   .container-about-me {
+    margin-top: 0;
     margin-bottom: 8rem;
   }
 
